@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eGc-rL-l0k">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--الرئيسية-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="aJBboNew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6z6-Ct-iSs">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iuz-Oy-GMf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="الموقع" id="hrq-oh-nCn">
+                                        <barButtonItem key="leftBarButtonItem" title="تواصل" id="25e-z2-bBe">
+                                            <connections>
+                                                <action selector="SCL:" destination="BYZ-38-t0r" id="Qbn-zG-sbV"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="RCy-H3-Cxi">
+                                            <connections>
+                                                <action selector="r:" destination="BYZ-38-t0r" id="E6M-6i-x4E"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Iuz-Oy-GMf" firstAttribute="leading" secondItem="6z6-Ct-iSs" secondAttribute="leading" id="3k5-Da-gDZ"/>
+                            <constraint firstItem="Iuz-Oy-GMf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KL4-oB-kgY"/>
+                            <constraint firstItem="Iuz-Oy-GMf" firstAttribute="top" secondItem="6z6-Ct-iSs" secondAttribute="top" constant="-44" id="LgW-8Y-0vb"/>
+                            <constraint firstAttribute="bottom" secondItem="6z6-Ct-iSs" secondAttribute="bottom" id="T59-5j-LVc"/>
+                            <constraint firstAttribute="trailing" secondItem="Iuz-Oy-GMf" secondAttribute="trailing" id="TgR-3f-BT8"/>
+                            <constraint firstItem="Iuz-Oy-GMf" firstAttribute="trailing" secondItem="6z6-Ct-iSs" secondAttribute="trailing" id="cfL-sa-5Dd"/>
+                            <constraint firstItem="Iuz-Oy-GMf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="peC-Q7-dSN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="الرئيسية" image="Home" id="5hl-4L-5P1"/>
+                    <navigationItem key="navigationItem" id="AvL-Mv-EIR"/>
+                    <connections>
+                        <outlet property="webSite" destination="6z6-Ct-iSs" id="MvO-z1-gPs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024.8" y="-235.23238380809596"/>
+        </scene>
+        <!--قناتي-->
+        <scene sceneID="pHT-Mf-6yj">
+            <objects>
+                <viewController id="bZR-s3-Can" customClass="ViewController3" customModule="aJBboNew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FQu-V3-Hp0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1Y-rg-R5a">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KmU-op-fSX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="قناتي" id="m8l-2X-XHd">
+                                        <barButtonItem key="leftBarButtonItem" title="تواصل" id="ejf-FO-vwp">
+                                            <connections>
+                                                <action selector="SCL:" destination="bZR-s3-Can" id="7Dp-7Z-b7B"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="H2s-uC-rtH">
+                                            <connections>
+                                                <action selector="r:" destination="bZR-s3-Can" id="gCy-T4-v5O"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="b1Y-rg-R5a" secondAttribute="trailing" id="Syc-x4-3Bd"/>
+                            <constraint firstItem="b1Y-rg-R5a" firstAttribute="top" secondItem="KmU-op-fSX" secondAttribute="top" constant="44" id="XaI-GI-P7l"/>
+                            <constraint firstItem="b1Y-rg-R5a" firstAttribute="leading" secondItem="FQu-V3-Hp0" secondAttribute="leading" id="ZQb-NN-aQn"/>
+                            <constraint firstAttribute="bottom" secondItem="b1Y-rg-R5a" secondAttribute="bottom" id="aKq-KM-mSD"/>
+                            <constraint firstItem="b1Y-rg-R5a" firstAttribute="trailing" secondItem="KmU-op-fSX" secondAttribute="trailing" id="giR-5L-C2g"/>
+                            <constraint firstItem="b1Y-rg-R5a" firstAttribute="top" secondItem="0aQ-4b-tkB" secondAttribute="top" constant="44" id="lgg-mE-6x5"/>
+                            <constraint firstItem="b1Y-rg-R5a" firstAttribute="leading" secondItem="KmU-op-fSX" secondAttribute="leading" id="mhV-Zx-NC1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0aQ-4b-tkB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="قناتي" image="YouTube" id="Tqg-z9-f2C"/>
+                    <connections>
+                        <outlet property="YT" destination="b1Y-rg-R5a" id="JeD-BY-NVW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GO2-BP-0zO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="-532.98350824587715"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Y7g-ft-7mP">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eGc-rL-l0k" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wnC-ch-k9w">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Mdp-uV-Z3m"/>
+                        <segue destination="PwO-xe-5DH" kind="relationship" relationship="viewControllers" id="VFH-Xu-fgh"/>
+                        <segue destination="bZR-s3-Can" kind="relationship" relationship="viewControllers" id="ijZ-tC-4KE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oc7-40-qUB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--المتجر-->
+        <scene sceneID="7TX-4d-2bX">
+            <objects>
+                <viewController id="PwO-xe-5DH" customClass="ViewController2" customModule="aJBboNew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q7c-20-2Ui">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHe-yA-24i">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iD4-NM-8oy">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="المتجر" id="6ob-6Z-nfz">
+                                        <barButtonItem key="leftBarButtonItem" title="تواصل" id="pqr-EM-kda">
+                                            <connections>
+                                                <action selector="SCL:" destination="PwO-xe-5DH" id="JaG-jr-F3j"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="4Sq-lw-j1Q">
+                                            <connections>
+                                                <action selector="r:" destination="PwO-xe-5DH" id="KtC-mb-Idn"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YHe-yA-24i" secondAttribute="trailing" id="40y-t8-kpb"/>
+                            <constraint firstItem="YHe-yA-24i" firstAttribute="leading" secondItem="iD4-NM-8oy" secondAttribute="leading" id="7TM-hA-hMo"/>
+                            <constraint firstItem="YHe-yA-24i" firstAttribute="top" secondItem="0kV-S2-CmV" secondAttribute="top" constant="-20" id="PDg-GD-yi5"/>
+                            <constraint firstAttribute="bottom" secondItem="YHe-yA-24i" secondAttribute="bottom" id="ay6-Ng-CcQ"/>
+                            <constraint firstItem="YHe-yA-24i" firstAttribute="leading" secondItem="q7c-20-2Ui" secondAttribute="leading" id="noC-JD-PQA"/>
+                            <constraint firstItem="YHe-yA-24i" firstAttribute="trailing" secondItem="iD4-NM-8oy" secondAttribute="trailing" id="qJt-c5-z9K"/>
+                            <constraint firstItem="YHe-yA-24i" firstAttribute="top" secondItem="iD4-NM-8oy" secondAttribute="top" constant="-20" id="tKq-aT-rGq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0kV-S2-CmV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="المتجر" image="Store" id="tZO-rc-bAI"/>
+                    <connections>
+                        <outlet property="store" destination="YHe-yA-24i" id="rRY-DY-V6S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnR-ZM-c3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024.8" y="521.28935532233891"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home" width="32" height="32"/>
+        <image name="Store" width="32" height="32"/>
+        <image name="YouTube" width="32" height="32"/>
+    </resources>
+</document>
